@@ -54,6 +54,7 @@ for size in ${UI_FONT_SIZES[@]}; do
 done
 
 python fontconvert.py notosans_8_regular 8 ../builtinFonts/source/NotoSans/NotoSans-Regular.ttf > ../builtinFonts/notosans_8_regular.h
+python fontconvert.py notosans_10_regular 10 ../builtinFonts/source/NotoSans/NotoSans-Regular.ttf > ../builtinFonts/notosans_10_regular.h
 
 echo ""
 echo "Running compression verification..."

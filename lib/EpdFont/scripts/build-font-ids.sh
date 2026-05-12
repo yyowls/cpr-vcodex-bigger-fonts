@@ -50,3 +50,4 @@ echo "#define NOTOSANS_22_FONT_ID ($(font_id ./notosans_22_regular.h ./notosans_
 echo "#define UI_10_FONT_ID ($(font_id ./ubuntu_10_regular.h ./ubuntu_10_bold.h))"
 echo "#define UI_12_FONT_ID ($(font_id ./ubuntu_12_regular.h ./ubuntu_12_bold.h))"
 echo "#define SMALL_FONT_ID ($(font_id ./notosans_8_regular.h))"
+echo "#define NOTOSANS_10_FONT_ID ($(font_id ./notosans_10_regular.h ./notosans_10_bold.h ./notosans_10_bolditalic.h ./notosans_10_italic.h))"
