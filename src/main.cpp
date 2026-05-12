@@ -44,48 +44,40 @@ FontDecompressor fontDecompressor;
 FontCacheManager fontCacheManager(renderer.getFontMap());
 
 // Fonts
-EpdFont bookerly14RegularFont(&bookerly_14_regular);
-EpdFont bookerly14BoldFont(&bookerly_14_bold);
-EpdFont bookerly14ItalicFont(&bookerly_14_italic);
-EpdFont bookerly14BoldItalicFont(&bookerly_14_bolditalic);
-EpdFontFamily bookerly14FontFamily(&bookerly14RegularFont, &bookerly14BoldFont, &bookerly14ItalicFont,
-                                   &bookerly14BoldItalicFont);
-#ifndef OMIT_FONTS
-EpdFont bookerly10RegularFont(&bookerly_10_regular);
-EpdFont bookerly10BoldFont(&bookerly_10_bold);
-EpdFont bookerly10ItalicFont(&bookerly_10_italic);
-EpdFont bookerly10BoldItalicFont(&bookerly_10_bolditalic);
-EpdFontFamily bookerly10FontFamily(&bookerly10RegularFont, &bookerly10BoldFont, &bookerly10ItalicFont,
-                                   &bookerly10BoldItalicFont);
-EpdFont bookerly12RegularFont(&bookerly_12_regular);
-EpdFont bookerly12BoldFont(&bookerly_12_bold);
-EpdFont bookerly12ItalicFont(&bookerly_12_italic);
-EpdFont bookerly12BoldItalicFont(&bookerly_12_bolditalic);
-EpdFontFamily bookerly12FontFamily(&bookerly12RegularFont, &bookerly12BoldFont, &bookerly12ItalicFont,
-                                   &bookerly12BoldItalicFont);
-EpdFont bookerly16RegularFont(&bookerly_16_regular);
-EpdFont bookerly16BoldFont(&bookerly_16_bold);
-EpdFont bookerly16ItalicFont(&bookerly_16_italic);
-EpdFont bookerly16BoldItalicFont(&bookerly_16_bolditalic);
-EpdFontFamily bookerly16FontFamily(&bookerly16RegularFont, &bookerly16BoldFont, &bookerly16ItalicFont,
-                                   &bookerly16BoldItalicFont);
 EpdFont bookerly18RegularFont(&bookerly_18_regular);
 EpdFont bookerly18BoldFont(&bookerly_18_bold);
 EpdFont bookerly18ItalicFont(&bookerly_18_italic);
 EpdFont bookerly18BoldItalicFont(&bookerly_18_bolditalic);
 EpdFontFamily bookerly18FontFamily(&bookerly18RegularFont, &bookerly18BoldFont, &bookerly18ItalicFont,
                                    &bookerly18BoldItalicFont);
+#ifndef OMIT_FONTS
+EpdFont bookerly14RegularFont(&bookerly_14_regular);
+EpdFont bookerly14BoldFont(&bookerly_14_bold);
+EpdFont bookerly14ItalicFont(&bookerly_14_italic);
+EpdFont bookerly14BoldItalicFont(&bookerly_14_bolditalic);
+EpdFontFamily bookerly14FontFamily(&bookerly14RegularFont, &bookerly14BoldFont, &bookerly14ItalicFont,
+                                   &bookerly14BoldItalicFont);
+EpdFont bookerly16RegularFont(&bookerly_16_regular);
+EpdFont bookerly16BoldFont(&bookerly_16_bold);
+EpdFont bookerly16ItalicFont(&bookerly_16_italic);
+EpdFont bookerly16BoldItalicFont(&bookerly_16_bolditalic);
+EpdFontFamily bookerly16FontFamily(&bookerly16RegularFont, &bookerly16BoldFont, &bookerly16ItalicFont,
+                                   &bookerly16BoldItalicFont);
+EpdFont bookerly20RegularFont(&bookerly_20_regular);
+EpdFont bookerly20BoldFont(&bookerly_20_bold);
+EpdFont bookerly20ItalicFont(&bookerly_20_italic);
+EpdFont bookerly20BoldItalicFont(&bookerly_20_bolditalic);
+EpdFontFamily bookerly20FontFamily(&bookerly20RegularFont, &bookerly20BoldFont, &bookerly20ItalicFont,
+                                   &bookerly20BoldItalicFont);
+EpdFont bookerly22RegularFont(&bookerly_22_regular);
+EpdFont bookerly22BoldFont(&bookerly_22_bold);
+EpdFont bookerly22ItalicFont(&bookerly_22_italic);
+EpdFont bookerly22BoldItalicFont(&bookerly_22_bolditalic);
+EpdFontFamily bookerly22FontFamily(&bookerly22RegularFont, &bookerly22BoldFont, &bookerly22ItalicFont,
+                                   &bookerly22BoldItalicFont);
 
 // Lexend is bundled with regular and bold only. Italic falls back to regular,
 // and bold italic falls back to bold to keep the family complete for EPUB styling.
-EpdFont lexend10RegularFont(&lexend_10_regular);
-EpdFont lexend10BoldFont(&lexend_10_bold);
-EpdFontFamily lexend10FontFamily(&lexend10RegularFont, &lexend10BoldFont, &lexend10RegularFont,
-                                 &lexend10BoldFont);
-EpdFont lexend12RegularFont(&lexend_12_regular);
-EpdFont lexend12BoldFont(&lexend_12_bold);
-EpdFontFamily lexend12FontFamily(&lexend12RegularFont, &lexend12BoldFont, &lexend12RegularFont,
-                                 &lexend12BoldFont);
 EpdFont lexend14RegularFont(&lexend_14_regular);
 EpdFont lexend14BoldFont(&lexend_14_bold);
 EpdFontFamily lexend14FontFamily(&lexend14RegularFont, &lexend14BoldFont, &lexend14RegularFont,
@@ -98,19 +90,15 @@ EpdFont lexend18RegularFont(&lexend_18_regular);
 EpdFont lexend18BoldFont(&lexend_18_bold);
 EpdFontFamily lexend18FontFamily(&lexend18RegularFont, &lexend18BoldFont, &lexend18RegularFont,
                                  &lexend18BoldFont);
+EpdFont lexend20RegularFont(&lexend_20_regular);
+EpdFont lexend20BoldFont(&lexend_20_bold);
+EpdFontFamily lexend20FontFamily(&lexend20RegularFont, &lexend20BoldFont, &lexend20RegularFont,
+                                 &lexend20BoldFont);
+EpdFont lexend22RegularFont(&lexend_22_regular);
+EpdFont lexend22BoldFont(&lexend_22_bold);
+EpdFontFamily lexend22FontFamily(&lexend22RegularFont, &lexend22BoldFont, &lexend22RegularFont,
+                                 &lexend22BoldFont);
 
-EpdFont notosans10RegularFont(&notosans_10_regular);
-EpdFont notosans10BoldFont(&notosans_10_bold);
-EpdFont notosans10ItalicFont(&notosans_10_italic);
-EpdFont notosans10BoldItalicFont(&notosans_10_bolditalic);
-EpdFontFamily notosans10FontFamily(&notosans10RegularFont, &notosans10BoldFont, &notosans10ItalicFont,
-                                   &notosans10BoldItalicFont);
-EpdFont notosans12RegularFont(&notosans_12_regular);
-EpdFont notosans12BoldFont(&notosans_12_bold);
-EpdFont notosans12ItalicFont(&notosans_12_italic);
-EpdFont notosans12BoldItalicFont(&notosans_12_bolditalic);
-EpdFontFamily notosans12FontFamily(&notosans12RegularFont, &notosans12BoldFont, &notosans12ItalicFont,
-                                   &notosans12BoldItalicFont);
 EpdFont notosans14RegularFont(&notosans_14_regular);
 EpdFont notosans14BoldFont(&notosans_14_bold);
 EpdFont notosans14ItalicFont(&notosans_14_italic);
@@ -129,6 +117,18 @@ EpdFont notosans18ItalicFont(&notosans_18_italic);
 EpdFont notosans18BoldItalicFont(&notosans_18_bolditalic);
 EpdFontFamily notosans18FontFamily(&notosans18RegularFont, &notosans18BoldFont, &notosans18ItalicFont,
                                    &notosans18BoldItalicFont);
+EpdFont notosans20RegularFont(&notosans_20_regular);
+EpdFont notosans20BoldFont(&notosans_20_bold);
+EpdFont notosans20ItalicFont(&notosans_20_italic);
+EpdFont notosans20BoldItalicFont(&notosans_20_bolditalic);
+EpdFontFamily notosans20FontFamily(&notosans20RegularFont, &notosans20BoldFont, &notosans20ItalicFont,
+                                   &notosans20BoldItalicFont);
+EpdFont notosans22RegularFont(&notosans_22_regular);
+EpdFont notosans22BoldFont(&notosans_22_bold);
+EpdFont notosans22ItalicFont(&notosans_22_italic);
+EpdFont notosans22BoldItalicFont(&notosans_22_bolditalic);
+EpdFontFamily notosans22FontFamily(&notosans22RegularFont, &notosans22BoldFont, &notosans22ItalicFont,
+                                   &notosans22BoldItalicFont);
 #endif  // OMIT_FONTS
 
 EpdFont smallFont(&notosans_8_regular);
@@ -264,24 +264,24 @@ void setupDisplayAndFonts() {
   }
   fontCacheManager.setFontDecompressor(&fontDecompressor);
   renderer.setFontCacheManager(&fontCacheManager);
-  renderer.insertFont(BOOKERLY_14_FONT_ID, bookerly14FontFamily);
-#ifndef OMIT_FONTS
-  renderer.insertFont(BOOKERLY_10_FONT_ID, bookerly10FontFamily);
-  renderer.insertFont(BOOKERLY_12_FONT_ID, bookerly12FontFamily);
-  renderer.insertFont(BOOKERLY_16_FONT_ID, bookerly16FontFamily);
   renderer.insertFont(BOOKERLY_18_FONT_ID, bookerly18FontFamily);
+  #ifndef OMIT_FONTS
+  renderer.insertFont(BOOKERLY_14_FONT_ID, bookerly14FontFamily);
+  renderer.insertFont(BOOKERLY_16_FONT_ID, bookerly16FontFamily);
+  renderer.insertFont(BOOKERLY_20_FONT_ID, bookerly20FontFamily);
+  renderer.insertFont(BOOKERLY_22_FONT_ID, bookerly22FontFamily);
 
-  renderer.insertFont(LEXEND_10_FONT_ID, lexend10FontFamily);
-  renderer.insertFont(LEXEND_12_FONT_ID, lexend12FontFamily);
   renderer.insertFont(LEXEND_14_FONT_ID, lexend14FontFamily);
   renderer.insertFont(LEXEND_16_FONT_ID, lexend16FontFamily);
   renderer.insertFont(LEXEND_18_FONT_ID, lexend18FontFamily);
+  renderer.insertFont(LEXEND_20_FONT_ID, lexend20FontFamily);
+  renderer.insertFont(LEXEND_22_FONT_ID, lexend22FontFamily);
 
-  renderer.insertFont(NOTOSANS_10_FONT_ID, notosans10FontFamily);
-  renderer.insertFont(NOTOSANS_12_FONT_ID, notosans12FontFamily);
   renderer.insertFont(NOTOSANS_14_FONT_ID, notosans14FontFamily);
   renderer.insertFont(NOTOSANS_16_FONT_ID, notosans16FontFamily);
   renderer.insertFont(NOTOSANS_18_FONT_ID, notosans18FontFamily);
+  renderer.insertFont(NOTOSANS_20_FONT_ID, notosans20FontFamily);
+  renderer.insertFont(NOTOSANS_22_FONT_ID, notosans22FontFamily);
 #endif  // OMIT_FONTS
   refreshUiFontsForCurrentLanguage();
   LOG_DBG("MAIN", "Fonts setup");
