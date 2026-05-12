@@ -134,6 +134,9 @@ EpdFontFamily notosans22FontFamily(&notosans22RegularFont, &notosans22BoldFont, 
 EpdFont smallFont(&notosans_8_regular);
 EpdFontFamily smallFontFamily(&smallFont);
 
+EpdFont notosans10RegularFont(&notosans_10_regular);
+EpdFontFamily notosans10FontFamily(&notosans10RegularFont);
+
 EpdFont ui10RegularFont(&ubuntu_10_regular);
 EpdFont ui10BoldFont(&ubuntu_10_bold);
 EpdFontFamily ui10FontFamily(&ui10RegularFont, &ui10BoldFont);
