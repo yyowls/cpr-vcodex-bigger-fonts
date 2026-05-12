@@ -52,7 +52,7 @@
 #include <builtinFonts/notosans_22_bolditalic.h>
 #include <builtinFonts/notosans_22_italic.h>
 #include <builtinFonts/notosans_22_regular.h>
-#include <builtinFonts/ubuntu_14_bold.h>
-#include <builtinFonts/ubuntu_14_regular.h>
-#include <builtinFonts/ubuntu_16_bold.h>
-#include <builtinFonts/ubuntu_16_regular.h>
+#include <builtinFonts/ubuntu_10_bold.h>
+#include <builtinFonts/ubuntu_10_regular.h>
+#include <builtinFonts/ubuntu_12_bold.h>
+#include <builtinFonts/ubuntu_12_regular.h>
